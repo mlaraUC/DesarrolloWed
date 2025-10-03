@@ -12,38 +12,43 @@ body {
   background: #f9f9f9;
 }
 
-/* Header superior */
 .secondary-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #004b23;
+  background: #004b23; 
   color: #fff;
-  padding: 5px 20px;
-  font-size: 14px;
+  padding: 8px 20px;
+  font-size: 13px;
 }
 
 .secondary-header .alignleft {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 .secondary-header .alignleft-container a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+.secondary-header .alignleft-container a:hover {
+  color: #aad576;
 }
 
 .secondary-header .social-networks {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .secondary-header .icon {
   cursor: pointer;
+  font-size: 14px;
 }
 
-/* Header principal */
+
 .principal-header {
   display: flex;
   justify-content: space-between;
@@ -51,21 +56,24 @@ body {
   padding: 15px 40px;
   background: #fff;
   border-bottom: 2px solid #eee;
+  
 }
 
 .principal-header .logo img {
-  height: 60px;
+  height: 65px;
+  object-fit: cover;    
 }
 
 .main-menu ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
 }
 
 .main-menu ul li a {
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
   color: #004b23;
   transition: color 0.3s;
 }
@@ -74,14 +82,14 @@ body {
   color: #00923f;
 }
 
-/* Banner */
+
 .banner img {
   width: 100%;
-  max-height: 400px;
+  max-height: 420px;
   object-fit: cover;
 }
 
-/* Estadísticas */
+
 .statistics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -89,20 +97,24 @@ body {
   background: #004b23;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .statistics .box i {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 
 .statistics p {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-/* Noticias */
+.statistics span {
+  font-size: 14px;
+}
+
+
 .notices {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -122,15 +134,15 @@ body {
   gap: 15px;
 }
 
-/* Multimedia */
+
 .media {
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
-  background: #f0f0f0;
+  background:  url("../imagenes/university_ft_bg2a.png")
 }
 
 .media h2 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 24px;
   color: #004b23;
 }
@@ -138,8 +150,12 @@ body {
 .media-items {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
+}
+
+.media-items iframe {
+  max-width: 100%;
 }
 
 .media-items img,
@@ -148,12 +164,45 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Footer */
+.partners-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.partner-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.partner-box:hover {
+  transform: scale(1.05);
+}
+
+.partner-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+
 .footer {
   background: #004b23;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   font-size: 14px;
 }
 
